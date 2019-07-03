@@ -1,6 +1,6 @@
 # coding-interviews-csharp
-> 1. 剑指Offer——名企面试官精讲典型编程题C#版 
-> 2. 习题来源[牛客网](https://www.nowcoder.com/ta/coding-interviews?page=)
+> 剑指Offer——名企面试官精讲典型编程题C#版  
+> 习题来源[牛客网](https://www.nowcoder.com/ta/coding-interviews?page=)
 
 
 # 剑指Offer
