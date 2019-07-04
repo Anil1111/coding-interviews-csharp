@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace CodingInterviews
@@ -75,6 +76,31 @@ namespace CodingInterviews
             }
             return sb.ToString();
         }
+
+        public static void Test(){
+            Stopwatch stop = new Stopwatch();
+            string str = "We Are Happy.";
+            for (int i = 0; i < 1; i++)
+            {
+                str = str + str;
+            }
+            Console.WriteLine($"字符串长度：{str.Length}");
+
+            stop.Restart();
+            Coding002.ReplaceSpaceForSimple(str);
+            stop.Stop();
+            Console.WriteLine(stop.ElapsedTicks);
+
+            stop.Restart();
+            Coding002.ReplaceSpace(str);
+            stop.Stop();
+            Console.WriteLine(stop.ElapsedTicks);
+
+            stop.Restart();
+            Coding002.ReplaceForBS(str);
+            stop.Stop();
+            Console.WriteLine(stop.ElapsedTicks);
+        } 
 
     }
 }
