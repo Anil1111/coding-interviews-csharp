@@ -90,8 +90,32 @@ namespace CodingInterviews
                 node.next = next;
                 return next;
             }
-
         }
 
+        /// <summary>
+        /// 栈的方式实现(倒过来的链表)
+        /// </summary>
+        /// <param name="nodes"></param>
+        /// <returns></returns>
+        public static ListNode PrintForReverse(ListNode nodes)
+        {
+            Stack<ListNode> listNodes = new Stack<ListNode>();
+            ListNode node = nodes;
+            while (node != null)
+            {
+                listNodes.Push(node);
+                node = node.next;
+            }
+
+            ListNode reverseNode = listNodes.Pop();
+            var temp = reverseNode;
+            foreach (var item in listNodes)
+            {
+                item.next = null;
+                temp.next = item;
+                temp = item;
+            }
+            return reverseNode;
+        }
     }
 }
