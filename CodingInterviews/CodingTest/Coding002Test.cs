@@ -7,7 +7,7 @@ using Xunit;
 
 namespace CodingTest
 {
-    public class Coing002Test
+    public class Coding002Test
     {
         /// <summary>
         /// 中间空格
