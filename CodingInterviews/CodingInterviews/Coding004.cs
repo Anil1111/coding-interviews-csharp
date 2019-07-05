@@ -101,7 +101,7 @@ namespace CodingInterviews
 
         /// <summary>
         /// 二叉树的前序遍历和中序遍历的结果，请重建出该二叉树
-        /// 根据前序遍历找到根，根据中序遍历找到左右子树，一次递归
+        /// 根据前序遍历找到根，根据中序遍历找到左右子树，依次递归
         /// 根 > 左 > 右
         /// </summary>
         /// <param name="preTree"></param>
